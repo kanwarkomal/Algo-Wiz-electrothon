@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Your Website</title>
+</head>
+<!-- <body style="background-image: url('backgrnd.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"> -->
+<body>
+    
+     <header>
+        <div class="logo">
+            <span class="color1">Insight</span><span class="color2">XR</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="user.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        
+     </header>
+ 
+<div class="top" >
+ 
+<main>
+     <div class="container">
+        <!-- <script>
+            // A fictional check for user authentication
+            const isUserSignedIn = true; // Replace with your actual authentication check
+
+            // Redirect to the home page if the user is signed in
+            if (isUserSignedIn) {
+                window.location.href = 'user.html'; // Replace 'home.html' with your actual home page URL
+            }
+        </script> -->
+        
+          <div class="signup-login-box">
+              <div class="toggle-btn-container">
+                  <button id="toggle-btn" onclick="toggleForm()">Sign In</button>
+              </div>
+
+             <!-- Sign In / Sign Up Form -->
+              <form id="auth-form" action="#" method="post">
+                  <label for="username">Username:</label>
+                  <input type="text" id="username" name="username" required>
+
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required>
+
+                  <label for="password">Password:</label>
+                  <input type="password" id="password" name="password" required>
+
+                  <button type="submit" id="submit-btn" onclick="redirectToSignUp()">Sign In</button>
+                  <p id="toggle-link">Don't have an account? <a href="#" onclick="toggleForm()">Sign Up</a></p>
+              </form>
+           </div>
+    </div>
+<!-- </main> -->
+</div>
+<div class="mid">
+
+   <div class="about">
+    <section>
+        <h1>About</h1>
+        <p>Welcome to InsightXRay, where the wonders of medical imaging come to life. 
+            At InsightXRay, we are dedicated to providing a comprehensive and user-friendly platform for understanding X-ray images of the human body. 
+            Our mission is to empower individuals with valuable insights into their health by demystifying the complexities of medical imaging.InsightXRay goes beyond the conventional by allowing users to upload X-ray images of their own or explore a curated collection. Our cutting-edge technology and user-friendly interface make it easy for anyone to comprehend and interpret X-ray results.
+             Whether you are a medical professional seeking detailed analysis or an individual curious about your own health, our platform caters to all levels of expertise.</p>
+    </div> 
+       
+    </section>
+</div>
+<div class="bottom">
+    <div class="faq-box" onclick="toggleAnswer('faq1')">
+        <div class="question">
+            <h3>Question 1: What is Lorem Ipsum?</h3>
+            <span>&#9660;</span>
+        </div>
+        <div class="answer" id="faq1">
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+    </div>
+
+    <div class="faq-box" onclick="toggleAnswer('faq2')">
+        <div class="question">
+            <h3>Question 2: Why do we use it?</h3>
+            <span>&#9660;</span>
+        </div>
+        <div class="answer" id="faq2">
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </div>
+    </div>
+
+
+</div>
+    
+<footer>
+    <div class="container">
+        <p>&copy; 2024 InsightXR. All rights reserved.</p>
+    </div>
+</footer>
+<script src="sign.js"></script>
+
+
+
+</body>
+</html>

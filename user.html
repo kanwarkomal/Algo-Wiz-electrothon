@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="user.css">
+    <title>Sign Up with X-ray Upload</title>
+    
+</head>
+<body >
+    <header>
+        <div class="logo"> <span class="color1">Insight</span><span class="color2">XR</span></div>
+       
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+            <div class="upload">
+                <div id="upload-container1" class="big-container">
+                    <label for="fileInput1">Choose an image:</label>
+                    <input type="file" id="fileInput1" class="fileInput1" accept="image/*" onchange="previewImage('fileInput1', 'preview1', 'fileDetails1')">
+                    <div id="preview1" class="preview-container"></div>
+                    <div id="fileDetails1" class="file-details"></div>
+                    <button onclick="removeFile('fileInput1', 'preview1', 'fileDetails1')" class="remove-button">&#10005; Remove</button>
+                    <button onclick="uploadFile()" class="upload-button">Upload</button>
+                </div>
+                
+            </div>
+            
+        
+             
+            
+        </div>
+
+
+
+    <script src="user.js"></script>
+
+
+</body>
+</html>
